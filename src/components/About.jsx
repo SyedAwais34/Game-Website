@@ -8,13 +8,13 @@ const About = () => {
       <section className="bg-[#fef8e8] py-22 px-6 text-gray-800">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold  mb-6">
-            About Us – 111 Patti Guide
+            About Us – Barlarlardown Guide
           </h1>
 
           <p className="text-lg mb-6">
             Welcome to{" "}
             <span className="font-semibold text-yellow-600">
-              111PattiGuide.xyz
+              barlarlardown.online
             </span>{" "}
             — your go-to gaming blog for fun, strategy, and skill-based play.
           </p>

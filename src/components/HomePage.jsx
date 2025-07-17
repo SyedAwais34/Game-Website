@@ -8,9 +8,9 @@ const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const downloadGames = [
-    "Download Flying Chess",
-    "Download Dragon Tiger Cave",
-    "Download Patti No1",
+    "Download 3 Patti Teen ",
+    "Download DragonTigerClub",
+    "Download 3 Patti No 1",
     "Download 3 Patti Gold",
     "Download Teen Patti Blue",
     "Download Flying Chess Pro",

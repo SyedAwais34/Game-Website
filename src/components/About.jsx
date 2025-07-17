@@ -74,7 +74,7 @@ const About = () => {
 
           <p className="text-base mt-6 font-semibold ">
             Thank you for visiting{" "}
-            <span className="text-yellow-600">111PattiGuide.xyz</span> — where
+            <span className="text-yellow-600">barlarlardown.online</span> — where
             gaming meets smart fun.
             <br />
             <span className="text-xl mt-2 block">Let the games begin!</span>

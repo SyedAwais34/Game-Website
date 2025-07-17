@@ -16,7 +16,7 @@ const Navigation = ({ onSearch }) => {
       <div className="h-[130px] bg-white flex justify-center p-4">
         <Link to="/">
         <img
-          src="/images/logo.png"
+          src="/images/logo.jpeg"
           alt="Logo"
           className="h-[100px] w-[100px] cursor-pointer"
           />

@@ -82,7 +82,7 @@ const HomePage = () => {
               Your Gaming Blog for Skill, Fun & Strategy
             </p>
             <h2 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
-              Welcome to 111 <br /> Patti Guide
+              Welcome to Bar <br /> larlardown Guide
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Looking for a gaming blog that keeps things smart, fun, and
@@ -96,7 +96,7 @@ const HomePage = () => {
             </p>
 
             <h3 className="text-5xl font-bold text-gray-900 mb-4">
-              What You’ll Find on <br /> 111PattiGuide.xyz
+              What You’ll Find on <br /> barlarlardown.online
             </h3>
 
             <ul className="space-y-1 text-gray-700 list-disc list-inside">

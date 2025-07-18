@@ -47,7 +47,7 @@ const HomePage = () => {
 ];
 
   const filteredGames = downloadGames.filter((text) =>
-    text.toLowerCase().includes(searchTerm.toLowerCase())
+    game.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (

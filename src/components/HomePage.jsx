@@ -9,7 +9,7 @@ const HomePage = () => {
 
   const downloadGames = [
     "Download 3 Patti Teen ",
-    "Download DragonTigerClub",
+    "Download 3 Patti DragonTigerClub",
     "Download 3 Patti No 1",
     "Download Flying Chess",
     "Download Teen Patti Blue",

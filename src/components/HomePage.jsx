@@ -8,16 +8,43 @@ const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const downloadGames = [
-    "Download 3 Patti Teen ",
-    "Download 3 Patti DragonTigerClub",
-    "Download 3 Patti No 1",
-    "Download Flying Chess",
-    "Download Teen Patti Blue",
-    "Download 3 Patti Gold",
-    "Download 3 Patti Loot",
-    "Download 3 Patti Ok",
-    "Download 3 Patti Lucky",
-  ];
+  {
+    name: "Download 3 Patti Teen",
+    link: "https://3pattiteen.com/?from_gameid=8290658&channelCode=100000",
+  },
+  {
+    name: "Download 3 Patti DragonTigerClub",
+    link: "https://DragonTigerClub.pk?from_gameid=5790598&channelCode=5106107",
+  },
+  {
+    name: "Download 3 Patti No 1",
+    link: "https://3pattino1.net?from_gameid=7688535&channelCode=100000",
+  },
+  {
+    name: "Download Flying Chess",
+    link: "https://flyingchess.net?from_gameid=8290658&channelCode=100000",
+  },
+  {
+    name: "Download Teen Patti Blue",
+    link: "https://DragonTigerClub.pk?from_gameid=5790598&channelCode=5106107",
+  },
+  {
+    name: "Download 3 Patti Gold",
+    link: "https://3pattino1.net?from_gameid=7688535&channelCode=100000",
+  },
+  {
+    name: "Download 3 Patti Loot",
+    link: "https://3pattiteen.com/?from_gameid=8290658&channelCode=100000",
+  },
+  {
+    name: "Download 3 Patti Ok",
+    link: "https://DragonTigerClub.pk?from_gameid=5790598&channelCode=5106107",
+  },
+  {
+    name: "Download 3 Patti Lucky",
+    link: "https://3pattino1.net?from_gameid=7688535&channelCode=100000",
+  },
+];
 
   const filteredGames = downloadGames.filter((text) =>
     text.toLowerCase().includes(searchTerm.toLowerCase())
@@ -37,37 +64,44 @@ const HomePage = () => {
         />
 
         <div className="flex flex-col items-center gap-4">
-          {filteredGames.map((text, i) => (
-            <React.Fragment key={i}>
-              <button
-                className={`flex items-center justify-center min-w-[260px] max-w-[320px] px-6 py-3 rounded-[12px] text-[18px] text-white text-center font-medium transition duration-300
-            ${
-              [
-                "bg-gradient-to-r from-pink-500 to-red-500",
-                "bg-gradient-to-r from-green-400 to-blue-500",
-                "bg-gradient-to-r from-yellow-400 to-orange-500",
-                "bg-gradient-to-r from-indigo-500 to-purple-600",
-                "bg-gradient-to-r from-teal-400 to-cyan-600",
-                "bg-gradient-to-r from-rose-400 to-pink-600",
-                "bg-gradient-to-r from-lime-400 to-emerald-500",
-                "bg-gradient-to-r from-blue-500 to-indigo-700",
-                "bg-gradient-to-r from-amber-500 to-yellow-600",
-              ][i % 9]
-            } hover:opacity-90`}
-              >
-                <MdOutlineFileDownload size={30} className="mr-2" />
-                {text}
-              </button>
+         {filteredGames.map((game, i) => (
+  <React.Fragment key={i}>
+    <a
+      href={game.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full flex justify-center"
+    >
+      <button
+        className={`flex items-center justify-center min-w-[260px] max-w-[320px] px-6 py-3 rounded-[12px] text-[18px] text-white text-center font-medium transition duration-300
+        ${
+          [
+            "bg-gradient-to-r from-pink-500 to-red-500",
+            "bg-gradient-to-r from-green-400 to-blue-500",
+            "bg-gradient-to-r from-yellow-400 to-orange-500",
+            "bg-gradient-to-r from-indigo-500 to-purple-600",
+            "bg-gradient-to-r from-teal-400 to-cyan-600",
+            "bg-gradient-to-r from-rose-400 to-pink-600",
+            "bg-gradient-to-r from-lime-400 to-emerald-500",
+            "bg-gradient-to-r from-blue-500 to-indigo-700",
+            "bg-gradient-to-r from-amber-500 to-yellow-600",
+          ][i % 9]
+        } hover:opacity-90`}
+      >
+        <MdOutlineFileDownload size={30} className="mr-2" />
+        {game.name}
+      </button>
+    </a>
 
-              {i === 2 && (
-                <img
-                  src="/images/2.webp"
-                  alt="Special Banner"
-                  className="mx-auto my-4 w-[650px]"
-                />
-              )}
-            </React.Fragment>
-          ))}
+    {i === 2 && (
+      <img
+        src="/images/2.webp"
+        alt="Special Banner"
+        className="mx-auto my-4 w-[650px]"
+      />
+    )}
+  </React.Fragment>
+))}
         </div>
 
         <img src="/images/3.webp" alt="Refer & Earn" className="mx-auto mt-6" />

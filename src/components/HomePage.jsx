@@ -22,7 +22,7 @@ const HomePage = () => {
   },
   {
     name: "Download Flying Chess",
-    link: "https://flyingchess.net?from_gameid=8290658&channelCode=100000",
+    link: "https://flyingchess.com/?from_gameid=8290658&channelCode=100000",
   },
   {
     name: "Download Teen Patti Blue",
